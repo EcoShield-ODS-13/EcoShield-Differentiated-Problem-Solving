@@ -1,5 +1,5 @@
-import matplotlib.pyplot as plt
-import numpy as np
+import matplotlib.pyplot as plt # Biblioteca para criar gráficos e exibí-los
+import numpy as np # Biblioteca para realizar cálculos matemáticos e gerar intervalos de valores
 
 
 def exibirSobre():
@@ -17,13 +17,15 @@ maior probabilidade de alagamentos e enchentes.
 
 O objetivo é auxiliar sistemas de alerta antecipado,
 contribuindo para a prevenção de desastres e para a
-segurança da população.
+segurança da população usando tecnologias espaciais.
 
 Função utilizada:
 
 R(x) = 0.5x + 10
 R(x) = risco de enchente
 x = nível de chuva
+
+
 """)
 
 
@@ -44,16 +46,16 @@ def calcularRisco(chuva):
 
     # Gráfico
 
-    chuvas = np.linspace(0, 300, 100)
-    riscos = 0.5 * chuvas + 10
-    riscos = np.minimum(riscos, 100)
+    chuvas = np.linspace(0, 300, 100) # Cria valores de chuva entre 0 e 300 mm
+    riscos = 0.5 * chuvas + 10 # Aplica a função matemática para calcular o risco
+    riscos = np.minimum(riscos, 100) # Limita o risco máximo em 100%
 
-    plt.figure(figsize=(8, 5))
-    plt.plot(chuvas, riscos, linewidth=2)
+    plt.figure(figsize=(8, 5)) # Cria a área do gráfico
+    plt.plot(chuvas, riscos, linewidth=2) # Desenha a linha da função
 
-    plt.scatter(chuva, risco, s=80)
+    plt.scatter(chuva, risco, s=80) # Marca o ponto correspondente ao valor informado pelo usuário
 
-    plt.annotate(
+    plt.annotate( # Exibe as coordenadas do ponto no gráfico
         f"({chuva:.0f} mm, {risco:.0f}%)",
         (chuva, risco),
         xytext=(10, 10),
@@ -65,7 +67,7 @@ def calcularRisco(chuva):
     plt.ylabel("Risco Estimado (%)")
     plt.xlim(0, 300)
     plt.ylim(0, 110)
-    plt.grid(True)
+    plt.grid(True) # Adiciona grade para facilitar a leitura
 
     plt.show()
 
