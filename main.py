@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt # Biblioteca para criar gráficos e exibí-los
 import numpy as np # Biblioteca para realizar cálculos matemáticos e gerar intervalos de valores
 
+############################################################################################
+# ATENÇÃO! PARA A APLICAÇÃO FUNCIONAR CORRETAMENTE, É NECESSÁRIO BAIXAR AS BIBLIOTECAS ACIMA
+############################################################################################
 
 def exibirSobre():
     print("=" * 67)
