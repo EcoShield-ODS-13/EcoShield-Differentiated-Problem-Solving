@@ -89,6 +89,22 @@ def simular():
             f"Risco: {risco:5.1f}%"
         )
 
+def analiseMatematica():
+    print("=" * 28)
+    print("ANÁLISE MATEMÁTICA DA FUNÇÃO")
+    print("=" * 28)
+
+    print("""
+R(x) = 0,5x + 10
+
+Domínio:    x ∈ [0, 300] mm
+Imagem:     R(x) ∈ [10, 100] %
+Crescimento: estritamente crescente (a = 0,5 > 0)
+Zero:        x = -20 (fora do domínio — risco nunca é nulo)
+R(0) = 10%  (risco base mesmo sem chuva)
+
+""")
+
 def menu():
     while True:
 
@@ -98,7 +114,8 @@ def menu():
         print("1 - Calcular risco de enchente")
         print("2 - Sobre a aplicação")
         print("3 - Simular cenários")
-        print("4 - Sair")
+        print("4 - Análise matemática da função")
+        print("5 - Sair")
 
         opcao = input("\nEscolha uma opção: ")
 
@@ -126,6 +143,9 @@ def menu():
             simular()
 
         elif opcao == "4":
+            analiseMatematica()
+
+        elif opcao == "5":
             print("\nFim da operação!")
             break
 
