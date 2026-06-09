@@ -1,7 +1,7 @@
 <div align="center">
   <img src="imgs/orbitalflood_icon.png" width="80">
 
-# ECOShield - Flood Risk
+# ECOShield - Differentiated Problem Solving
 
 Sistema de previsão de enchentes baseado em dados de precipitação e modelagem matemática aplicada ao monitoramento ambiental.
 
@@ -14,7 +14,7 @@ Sistema de previsão de enchentes baseado em dados de precipitação e modelagem
 
 ## 📖 Sobre o Projeto
 
-O **ECOShield - Flood Risk** é uma aplicação desenvolvida em Python com o objetivo de estimar o risco de enchentes a partir do volume de chuva registrado em uma determinada região.
+O **ECOShield - Differentiated Problem Solving** é uma aplicação desenvolvida em Python com o objetivo de estimar o risco de enchentes a partir do volume de chuva registrado em uma determinada região.
 
 A proposta utiliza conceitos relacionados ao monitoramento climático realizado por satélites meteorológicos, que coletam dados de precipitação em tempo real. A partir dessas informações, o sistema realiza cálculos matemáticos capazes de auxiliar processos de prevenção e conscientização sobre desastres naturais.
 
